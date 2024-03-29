@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ .static-box {
+    position: static;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+ }
+
+ .relative-box {
+    position: relative;
+    left: 30px;
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 10px;
+ }
+
+ .container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    padding: 10px;
+ }
+
+ .absolute-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: lightcoral;
+    padding: 20px;
+ }
+
+ .fixed-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: lightsalmon;
+    padding: 20px;
+ }
+
+ .sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: lightyellow;
+    padding: 20px;
+ }
+</style>
+</head>
+<body>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h2>Static Position</h2>
+<div class="static-box">Этот блок имеет position: static;</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h2>Relative Position</h2>
+<div class="relative-box">Этот блок имеет position: relative;</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h2>Absolute Position</h2>
+<div class="container">
+ <div class="absolute-box">Этот блок имеет position: absolute;</div>
+</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h2>Fixed Position</h2>
+<div class="fixed-box">Этот блок имеет position: fixed;</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h2>Sticky Position</h2>
+<div class="sticky-box">Этот блок имеет position: sticky;</div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+</body>
+</html>
