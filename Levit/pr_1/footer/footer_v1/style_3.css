@@ -1,0 +1,42 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+html,
+body{
+	height: 100%;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+container{
+max-width: 1000px;
+padding: 25px 10px;
+margin: 0 auto;
+}
+
+.header{
+height: 200px;
+background-color: #0db06e;
+position: sticky;
+top:0;
+}
+
+.main{
+	background-color: #ccc;
+	flex-grow: 1;
+}
+
+.footer{
+	height: 200px;
+	background-color: #000;
+}
