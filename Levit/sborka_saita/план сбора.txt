@@ -1,6 +1,6 @@
 0. добавить начальный экрна с временем и погодой + кнопка перехода на основное сайт
 https://www.youtube.com/watch?v=MIYQR-Ybrn4&list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9 - погода
-https://www.youtube.com/watch?v=ANLgG1RtFVM - кнопка
+https://www.youtube.com/watch?v=ANLgG1RtFVM - кнопка ✅
 https://www.youtube.com/watch?v=paiI1N96EpQ - время
 1. добавить хедер липкий с выпадающим меню и добавить логотип
 https://www.youtube.com/watch?v=y1D_wUTtnTk - загрузка сайта 
