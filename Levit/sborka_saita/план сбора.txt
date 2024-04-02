@@ -1,0 +1,20 @@
+0. добавить начальный экрна с временем и погодой + кнопка перехода на основное сайт
+https://www.youtube.com/watch?v=MIYQR-Ybrn4&list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9 - погода
+https://www.youtube.com/watch?v=ANLgG1RtFVM - кнопка
+https://www.youtube.com/watch?v=paiI1N96EpQ - время
+1. добавить хедер липкий с выпадающим меню и добавить логотип
+https://www.youtube.com/watch?v=y1D_wUTtnTk - загрузка сайта 
+https://www.youtube.com/watch?v=lvqRMFscHgo&list=PL7Cfcl1HBQgp9GnBXwRNjvWuQHpVou6Qy&index=11 - выпадающий меню хедер
+2. добавить старницы
+3. добавить футер 
+- сделано. Надо скоприровать и вставить 
+4. добавить табличку с позицией на главную страницу
+5. оббратную связь сделать
+
+
+каталог картинок - https://www.youtube.com/watch?v=DiMj7tRUIBE
+ добавить к ней - скрол - https://www.youtube.com/watch?v=3RvQJX1_fKQ
+ добавить закладки с помощью магазина (в последнюю очередь) - https://www.youtube.com/watch?v=gXWohFYrI0M
+ или выше для сред обитания 
+ а так сделать или для сред или для картинок обитателей - https://www.youtube.com/watch?v=j7GG009J9uc
+добавить адаптацию (в последнюю очередь)

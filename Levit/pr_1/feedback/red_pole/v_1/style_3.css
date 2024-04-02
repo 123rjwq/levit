@@ -1,0 +1,16 @@
+.form-group {
+    margin-bottom: 15px;
+}
+
+.invalid-feedback {
+    color: red;
+    display: none;
+}
+
+.form-group:invalid .invalid-feedback {
+    display: block;
+}
+
+input:invalid {
+    background-color: red;
+}

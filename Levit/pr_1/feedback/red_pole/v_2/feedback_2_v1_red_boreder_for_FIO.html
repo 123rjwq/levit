@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ .invalid {
+    border: 2px solid red;
+ }
+ .valid {
+    border: 2px solid green;
+ }
+</style>
+</head>
+<body>
+
+<form>
+ <label for="fio">ФИО:</label><br>
+ <input type="text" id="fio" name="fio" oninput="validateFIO()"><br>
+ <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateFIO() {
+ var fio = document.getElementById("fio");
+ var words = fio.value.split(' ');
+ var isValid = true;
+
+ // Проверяем, что в поле введено ровно три слова
+ if (words.length !== 3) {
+    isValid = false;
+ } else {
+    // Проверяем, что все слова начинаются с большой буквы
+    for (var i = 0; i < words.length; i++) {
+      if (words[i].charAt(0) !== words[i].charAt(0).toUpperCase()) {
+        isValid = false;
+        break;
+      }
+    }
+
+    // Проверяем, что в поле нет цифр
+    if (/[0-9]/.test(fio.value)) {
+      isValid = false;
+    }
+ }
+
+ // Изменяем стиль поля ввода в зависимости от валидности
+ if (isValid) {
+    fio.classList.remove("invalid");
+    fio.classList.add("valid");
+ } else {
+    fio.classList.remove("valid");
+    fio.classList.add("invalid");
+ }
+}
+</script>
+
+</body>
+</html>

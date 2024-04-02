@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма обратной связи</title>
+    <link rel="stylesheet" href="style_3.css">
+</head>
+<body>
+
+<form id="feedbackForm">
+    <div class="form-group">
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name" placeholder="Иванов Иван Иванович" required>
+        <div class="invalid-feedback">Введите ФИО, начинающееся с большой буквы.</div>
+    </div>
+    <!-- Дополнительные поля формы -->
+    <button type="submit">Отправить</button>
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>

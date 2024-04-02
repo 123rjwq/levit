@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица природных зон и обитающих в них организмов</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        /* Фиксированный заголовок таблицы */
+        table thead {
+            display: block;
+        }
+        table tbody {
+            display: block;
+            overflow: auto;
+            height: 200px; /* Высота области прокрутки */
+        }
+        table tbody tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Природные зоны</th>
+            <th>Примеры живых организмов</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Тропические леса</td>
+            <td>Орлы-ястребы, аллигаторы, амазонские акулы</td>
+        </tr>
+        <tr>
+            <td>Степи</td>
+            <td>Львы, антилопы, газели</td>
+        </tr>
+        <tr>
+            <td>Тайга</td>
+            <td>Медведи, рыси, волки</td>
+        </tr>
+        <tr>
+            <td>Горные леса</td>
+            <td>Пантеры, тигры, гималайские медведи</td>
+        </tr>
+        <tr>
+            <td>Джунгли</td>
+            <td>Крокодилы, индийские слоны, тигры</td>
+        </tr>
+        <!-- Дополнительные примеры -->
+        <tr>
+            <td>Тундра</td>
+            <td>Полярные зайцы, песцы, белые медведи</td>
+        </tr>
+        <tr>
+            <td>Пустыни</td>
+            <td>Камелеоны, скорпионы, птицы-носороги</td>
+        </tr>
+        <tr>
+            <td>Моря</td>
+            <td>Кальмары, акулы, киты</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
