@@ -1,0 +1,258 @@
+/* Базовые стили */
+* {
+ box-sizing: border-box;
+}
+
+html, body {
+ height: 100%;
+ margin: 0;
+ font-family: Arial, sans-serif;
+ background-color: #32a852;
+ line-height: 1.6;
+ color: #333;
+ padding: 20px;
+}
+
+header {
+ position: fixed;
+ top: 0;
+ left: 0; /* Добавлено для обеспечения начала с левого края */
+ width: 100%; /* Установлено для обеспечения полной ширины */
+ z-index: 1000;
+ background-color: #fff;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ text-align: center;
+}
+
+
+body {
+ display: flex;
+ flex-direction: column;
+}
+
+main {
+ margin: 0 auto; /* Удалено фиксированное отступ для колонок */
+}
+
+.container {
+ display: flex;
+ justify-content: space-between;
+ margin: 0 auto;
+ max-width: 1200px;
+ padding: 20px;
+}
+
+/* Удалены фиксированные отступы для колонок */
+.article-overview, .social-links, .advertisement, .introduction, .motivation-methods-table {
+ margin-bottom: 20px;
+}
+
+table {
+ width: 100%;
+ border-collapse: collapse;
+}
+
+/* Удалены фиксированные позиции для колонок */
+.right-column, .left-column {
+    width: 100%; /* По умолчанию колонки занимают всю ширину */
+}
+
+th, td {
+ border: 1px solid #ddd;
+ padding: 8px;
+ text-align: left;
+ background-color: #f2f2f2;
+}
+
+/* Оставлены медиазапросы без изменений */
+@media screen and (max-width: 600px) {
+ h1 {
+    font-size: 2em;
+ }
+
+ p {
+    font-size: 1em;
+ }
+}
+
+.menu-container {
+ width: 100%;
+ background-color: #333;
+}
+
+.menu, .sub-menu {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: center;
+}
+
+.menu > li, .sub-menu > li {
+ position: relative;
+}
+
+.menu > li > a, .sub-menu > li > a {
+ display: block;
+ padding: 15px;
+ color: white;
+ text-decoration: none;
+}
+
+.menu > li:hover > .sub-menu {
+ display: block;
+}
+
+.sub-menu {
+ display: none;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ background-color: #444;
+}
+
+.sub-menu > li {
+ display: block;
+}
+
+.sub-menu > li > a:hover {
+ background-color: #555;
+}
+
+footer {
+ flex-shrink: 0;
+ background-color: #333;
+ color: white;
+ padding: 20px;
+ text-align: center;
+}
+
+/* Оставлены медиазапросы без изменений */
+@media screen and (max-width: 600px) {
+ footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Обеспечивает начало с левого края */
+    width: 100%; /* Установлено для обеспечения полной ширины */
+    background-color: #333; /* Пример цвета фона */
+    color: white; /* Пример цвета текста */
+    padding: 20px;
+    text-align: center;
+}
+
+
+ .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ .footer-section {
+    flex: 1;
+    margin: 10px;
+ }
+
+ .footer-section h2 {
+    margin-bottom: 10px;
+ }
+
+ .footer-section ul {
+    list-style: none;
+    padding: 0;
+ }
+
+ .footer-section ul li {
+    margin-bottom: 10px;
+ }
+
+ .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+ }
+
+ .footer-section ul li a:hover {
+    color: #ddd;
+ }
+
+ .introduction {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+ }
+
+ h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+ }
+
+ p {
+    font-size: 16px;
+    margin-bottom: 20px;
+ }
+
+ a {
+    color: #007BFF;
+    text-decoration: none;
+ }
+
+ a:hover {
+    text-decoration: underline;
+ }
+
+ .footer-bottom {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+ }
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column, .center-column, .right-column {
+        width: 100%;
+    }
+}
+
+/* Стили для планшетов */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left-column {
+        width: 30%;
+    }
+
+    .center-column {
+        width: 40%;
+    }
+
+    .right-column {
+        width: 30%;
+    }
+}
+
+/* Стили для настольных компьютеров */
+@media (min-width: 1025px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left-column {
+        width: 25%;
+    }
+
+    .center-column {
+        width: 50%;
+    }
+
+    .right-column {
+        width: 25%;
+    }
+}

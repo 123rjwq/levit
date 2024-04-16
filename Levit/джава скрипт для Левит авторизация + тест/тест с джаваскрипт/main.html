@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="authForm">
+        <h2>Авторизация</h2>
+        <form id="loginForm">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+
+    <div id="testForm" style="display: none;">
+        <h2>Тест</h2>
+        <form id="quizForm">
+            <p>Вопрос 1: Что такое HTML?</p>
+				<input type="radio" id="q1-a" name="q1" value="a">
+				<label for="q1-a">A) Язык программирования</label><br>
+				<input type="radio" id="q1-b" name="q1" value="b">
+				<label for="q1-b">B) Язык разметки</label><br>
+				<input type="radio" id="q1-c" name="q1" value="c">
+				<label for="q1-c">C) Язык стилей</label><br>
+				<input type="radio" id="q1-d" name="q1" value="d">
+				<label for="q1-d">D) Язык скриптов</label><br>
+
+            <p>Вопрос 2: Какой селектор CSS используется для выбора элементов по идентификатору?</p>
+            <select id="q2" name="q2">
+                <option value="">Выберите ответ</option>
+                <option value="a">.class</option>
+                <option value="b">#id</option>
+				<option value="c">[attr]</option>
+				<option value="d">:hover<</option>
+            </select>
+
+            <p>Вопрос 3: Какие из перечисленных элементов являются стандартными элементами формы в HTML?</p>
+				<input type="checkbox" id="q3-a" name="q3" value="a">
+				<label for="q3-a">A) < div ></label><br>
+				<input type="checkbox" id="q3-b" name="q3" value="b">
+				<label for="q3-b">B) < span ></label><br>
+				<input type="checkbox" id="q3-c" name="q3" value="c">
+				<label for="q3-c">C) < form ></label><br>
+				<input type="checkbox" id="q3-d" name="q3" value="d">
+				<label for="q3-d">D) < input ></label><br>
+				<input type="checkbox" id="q3-e" name="q3" value="e">
+				<label for="q3-e">E) < button ></label><br>
+				<input type="checkbox" id="q3-f" name="q3" value="f">
+				<label for="q3-f">F) < label ></label><br>
+				<input type="checkbox" id="q3-g" name="q3" value="g">
+				<label for="q3-g">G) < select ></label><br>
+				<input type="checkbox" id="q3-h" name="q3" value="h">
+				<label for="q3-h">H) < textarea ></label><br>
+
+
+            <button type="submit">Проверить ответы</button>
+        </form>
+    </div>
+
+    <div id="results">
+        <h2>Результаты</h2>
+        <textarea id="resultText" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
