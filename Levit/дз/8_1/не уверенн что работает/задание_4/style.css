@@ -1,0 +1,17 @@
+/* Здесь можно добавить стили для вашего сайта, например, для приветственного сообщения */
+#welcomeMessage {
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+#myText, #convertButton {
+    display: block;
+    margin-top: 10px;
+}
