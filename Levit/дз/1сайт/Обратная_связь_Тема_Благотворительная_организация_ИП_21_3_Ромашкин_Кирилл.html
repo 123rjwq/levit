@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+       <meta charset="UTF-8">
+       <title>Главная</title>
+       <link rel="stylesheet" href="стили\style(1.1).css">
+ </head>
+   <body>
+         <div>
+             <BODY BACKGROUND="https://phonoteka.org/uploads/posts/2021-04/1619738484_1-phonoteka_org-p-fon-dlya-prezentatsii-blagotvoritelnost-1.png">
+
+             <img src="photo\логотип.png" width="300" height="200" align="left" style="border-radius: 10px; border: 5px #ccc solid; box-shadow: 0 0 10px #444;"> 
+
+             <div>   
+                 <h1>Здравствуйте, вас приветствует, благотворительная компания "Наутро"</h1>
+                 <hr width=70% color=black>
+                 
+                 <h4><b><i>"Наутро"</b>- ведь все светлые мысли приходят именно на утро!</i></h4>  
+                 
+                 <hr width=50% color=black>
+
+                 <nav>
+                     <ul>
+                         <li>
+                             <a href="Титульная_страница_Тема_Благотворительная_организация_ИП_21_3_Ромашкин_Кирилл.html"><font color=cc7722 ><b><h3>Главная--></h3></b></a></li>
+                         <li>
+                             <a href="Описание_мероприятий_Тема_Благотворительная_организация_ИП_21_3_Ромашкин_Кирилл.html"><font color=cc7722 ><b><h3>Описание мероприятий--></h3></b></a></li>
+                     </ul>
+                 </nav>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+                 <br></br>
+
+                 <table width="1455">
+                     <tr class="nom1">
+                         <th>
+                             <h1>Подробнее об организации:</h1>
+                             <h2>Эта вкладка поможет, дорогой читатель, оформить анкту и отправить. Есть три анкеты:</h2>
+                             <ul>
+                                 <li><p align=left><i>Анкеты для оказания помощи</i></li>
+                                 <li><p align=left><i>Анкета об оказании помощи</i></li>
+                                 <li><p align=left><i>Предложить свои идеи/ написать отзовы</i></li>
+                             </ul>
+                         </th>
+                     </tr>
+                 </table>
+                 <hr width=50% color=black>
+                 <marquee height="30" width="100%" hspace="5" vspace="5" align="middle" bgcolor="orange" direction="left" loop="infinite" behavior="scroll" scrollamount="5" scrolldelay="100">
+                     <font color="#000000" size="5">Хорошего дня</font>
+                 </marquee>
+                 <form>
+					Фамилия <input type="text" id="surname" name="surname" size="20">
+					<br></br>
+					Имя <input type="text" id="name" name="name" size="20">
+					<br></br>
+					Отчество <input type="text" id="patronymic" name="patronymic" size="20">
+					<br></br>
+					Номер телефона <input type="text" id="phone" name="phone" oninput="formatPhone(this);" maxlength="15">
+					<br></br>
+					Возраст <select id="age" name="age" size="3">
+						<option>10-17</option>
+						<option>18-21</option>
+						<option>22-31</option>
+						<option>31-59</option>
+						<option>60-89</option>
+						<option>90-100</option>
+						<option>100- и выше (Выражаем Вам наше уважение)</option>
+					</select>
+					<br></br>
+					Электронная почта <input type="email" id="email" name="email" required>
+					<br></br>
+					Объяснительная (пояснение зачем требуется помощь) <textarea id="explanation" name="explanation" cols="40" rows="8"></textarea>
+					<br></br>
+					<input type="reset">
+					<input type="button" value="Сохранить" onclick="saveFormData()">
+					<input type="submit" value="Отправить">
+				</form>
+
+
+                 <script src="script.js"></script>
+             </th>
+         </tr>
+     </table>
+     <hr width=50% color=black>
+     <marquee height="30" width="100%" hspace="5" vspace="5" align="middle" bgcolor="orange" direction="left" loop="infinite" behavior="scroll" scrollamount="5" scrolldelay="100">
+         <font color="#000000" size="5">Хорошего дня</font>
+     </marquee>
+         </div>
+   </body>
+</html>

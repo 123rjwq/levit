@@ -1,0 +1,106 @@
+*{font-family: arial}
+
+h1, 		
+{
+color:#000000;
+}
+
+h3		
+{
+color:#FFFFFF;
+}
+
+nav {
+			    margin: 10px 0;
+			    background-color: #E64A19;
+			}
+			
+			/* убираем отступы и поля, а также list-style для "ul", 
+			 * и добавляем "position:relative" */
+			nav ul {
+			    padding:0;
+			    margin:0;
+			    list-style: none;
+			    position: relative;
+			    }
+			
+			/* применяем inline-block позиционирование к элементам навигации */
+			nav ul li {
+			    margin: 0px -7px 0 0;
+			    display:inline-block;
+			    background-color: #E64A19;
+			    }
+			
+			/* стилизуем ссылки */
+			nav a {
+			    display:block;
+			    padding:0 10px;
+			    color:#FFF;
+			    font-size:20px;
+			    line-height: 60px;
+			    text-decoration:none;
+			}
+			
+			/* изменяем цвет фона при наведении курсора */
+			nav a:hover {
+			    background-color: #000000;
+		}
+
+.123 {
+border-radius: 10px;
+border: 5px #ccc solid;
+box-shadow: 0 0 10px #444;
+}
+
+.nan {
+color: black;
+}
+
+.non {
+background: black;
+width="1400";
+}
+.nom{
+background: Khaki;
+color: black;
+  }
+.nom1
+{background: LightCyan;
+color: black;}
+
+@media screen and (max-width: 768px) {
+    /* Стили для мобильных устройств */
+    nav ul li {
+        margin: 0 10px; /* Уменьшаем отступы для лучшего использования пространства */
+    }
+
+   .back-to-top {
+        bottom: 10px; /* Перемещаем кнопку "Наверх" ближе к верху экрана */
+        right: 10px;
+    }
+
+    table.schedule-table, table.non, table.nan {
+        width: 100%; /* Устанавливаем максимальную ширину таблиц */
+    }
+
+    img[src="photo\логотип.png"] {
+        width: auto; /* Автоматическое масштабирование изображений */
+        max-width: 100%; /* Максимальная ширина изображения */
+    }
+
+    marquee {
+        display: none; /* Скрываем маркер на мобильных устройствах */
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Стили для планшетов */
+    nav ul li {
+        margin: 0 15px; /* Увеличиваем отступы для планшетов */
+    }
+
+   .back-to-top {
+        bottom: 15px; /* Аналогично для кнопки "Наверх" */
+        right: 15px;
+    }
+}
