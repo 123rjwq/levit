@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>car</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			display: grid;
+			place-items: center;
+			height: 100vh;
+		}
+		
+		.road{
+			width: 1190px;
+			height: 990px;
+			background-image: url(road1.png);
+			background-size: cover;
+			background-repeat: repeat-y;
+			background-position: 50% 50%;
+			animation: roadmovie 4s infinite linear;
+		}
+		
+		@keyframes roadmovie{
+			0%{background-position: 0 0;}
+			100%{background-position: 0 100vh;
+		}
+		
+		car{
+			width: 50px;
+            height: 50px;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<div class="road">
+		<img src="car.png" id="car">
+	</div>
+	
+	<script>
+	
+		var move = 10;
+		var car = document.getElementById("car");
+		window.onload=()=>{
+			car.style.position="absolute";
+			car.style.top=0;
+			car.style.left=0;
+		}
+		
+		window.onkeydown=(e)=>{
+			switch(e.key){
+				case'ArrowUp':
+					car.style.top=parseInt(car.style.top) - move + "px";
+					break;
+				case'ArrowDown':
+					car.style.top=parseInt(car.style.top) + move + "px";
+					break;
+				case'ArrowLeft':
+					car.style.left=parseInt(car.style.left) - move + "px";
+					break;
+				case'ArrowRight':
+					car.style.left=parseInt(car.style.left) + move + "px";
+					break;
+					
+			}
+		}
+	
+	</script>
+
+
+</body>
+</html>
+
+
+case 'ArrowUp':
+                    if(currentTop <= 990) { // Проверяем, не выходит ли автомобиль за верхнюю границу
+                        car.style.top = (currentTop - move) + "px";
+                    }
+                    break;
+                case 'ArrowDown':
+                    if(currentTop >= 0) { // Проверяем, не выходит ли автомобиль за нижнюю границу
+                        car.style.top = (currentTop + move) + "px";
+                    }
+                    break;
+                case 'ArrowLeft':
+                    if(currentLeft >= 0 && currentLeft <= 1140) { // Проверяем, не выходит ли автомобиль за левую границу
+                        car.style.left = (currentLeft - move) + "px";
+                    }
+                    break;
+                case 'ArrowRight':
+                    if(currentLeft >= 0 && currentLeft <= 1140) { // Проверяем, не выходит ли автомобиль за правую границу
+                        car.style.left = (currentLeft + move) + "px";
+                    }
+                    break;

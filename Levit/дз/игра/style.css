@@ -1,0 +1,11 @@
+
+
+.slaider-hid{
+width: 199px;
+height: 296px;
+overflow: hidden;
+position: absolute;
+z-index: 1;
+top: 3px;
+left: 34px;
+}
