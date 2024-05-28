@@ -1,0 +1,12 @@
+/* Стилизация формы */
+form {
+    width: 300px;
+    margin: auto;
+}
+
+/* Стилизация полей ввода */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}

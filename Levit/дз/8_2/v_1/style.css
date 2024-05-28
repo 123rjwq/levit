@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#lightImage{
+    width: 100px;
+    height: auto;
+}
+
+#myImage {
+    width: 900px; /* Задайте желаемую ширину */
+    height: 600px; /* Задайте желаемую высоту */
+    object-fit: contain; /* Обеспечивает масштабирование изображения без искажения пропорций */
+    object-position: 50px 30px; /* Позиционируйте изображение по оси X на 50px и по оси Y на 30px */
+}
+
+
+#alarmImage {
+   width: 50px;
+    height: 50px;
+	object-position: -1px -1px;
+}
+#alarmImage_1 {
+   width: 50px;
+    height: 50px;
+}
+#alarmImage_2 {
+   width: 50px;
+    height: 50px;
+}
+#alarmImage_3 {
+   width: 50px;
+    height: 50px;
+}
+
+#alarmImage_4 {
+   width: 50px;
+    height: 50px;
+}
+#alarmImage_5 {
+   width: 50px;
+    height: 50px;
+}
+#alarmImage_6 {
+   width: 50px;
+    height: 50px;
+}
+#alarmImage_7 {
+   width: 50px;
+    height: 50px;
+}#alarmImage_8 {
+   width: 50px;
+    height: 50px;
+}#alarmImage_9 {
+   width: 50px;
+    height: 50px;
+}
+#alarmImage_10 {
+   width: 50px;
+    height: 50px;
+}#alarmImage_11 {
+   width: 50px;
+    height: 50px;
+}#alarmImage_12 {
+   width: 50px;
+    height: 50px;
+}
+
+
+

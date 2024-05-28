@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.smart-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.room {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.light-container,
+.alarm-container,
+.heating-container,
+.sewage-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light-bulb,
+.alarm-light,
+.heating-icon,
+.sewage-icon {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.light-bulb {
+    background-image: url('light-on.jpg');
+}
+
+.alarm-light {
+    background-image: url('alarm.png');
+}
+
+.heating-icon {
+    background-image: url('heating.png');
+}
+
+.sewage-icon {
+    background-image: url('sewage.png');
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

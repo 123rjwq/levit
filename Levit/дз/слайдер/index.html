@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Объявление кодовой страницы документа -->
+    <meta charset="UTF-8">
+    
+    <!-- Связывание с внешним файлом стилей CSS для оформления -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Задание заголовка веб-страницы -->
+    <title>Slider</title>
+</head>
+<body>
+
+<!-- Контейнер для слайдов и элементов управления навигацией -->
+<div class="slider">
+
+    <!-- Индивидуальные изображения слайда внутри контейнера слайдера -->
+    <img class='slider-img' src="images/1.jpg" />
+    <img class='slider-img' src="images/2.jpg" />
+    <img class='slider-img' src="images/3.jpeg" />
+	<img class='slider-img' src="images/4.jpg" />
+	<img class='slider-img' src="images/5.jpeg" />
+
+    <!-- Элемент управления для перехода к предыдущему изображению -->
+    <div>
+        <img style='opacity: 1; height: 20px;' class="prev controlls" src="images/left.png" alt="">
+    </div>
+
+    <!-- Элемент управления для перехода к следующему изображению -->
+    <div>
+        <img style='opacity: 1; height: 20px;' class="next controlls" src="images/right.png" alt="">
+    </div>
+
+</div>
+
+
+<!-- Внешний JavaScript-файл для обработки функционала слайдера -->
+<script src="script.js"></script>
+</body>
+</html>

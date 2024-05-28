@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умный Дом</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="smart-home">
+        <div class="room">
+            <h2>Освещение</h2>
+            <div class="light-container">
+                <div class="light-bulb" id="light-bulb"></div>
+            </div>
+            <button id="light-btn">Включить свет</button>
+        </div>
+        <div class="room">
+            <h2>Сигнализация</h2>
+            <div class="alarm-container">
+                <div class="alarm-light" id="alarm-light"></div>
+            </div>
+            <button id="alarm-btn">Включить сигнализацию</button>
+        </div>
+        <div class="room">
+            <h2>Отопление</h2>
+            <div class="heating-container">
+                <div class="heating-icon" id="heating-icon"></div>
+            </div>
+            <button id="heating-btn">Включить отопление</button>
+        </div>
+        <div class="room">
+            <h2>Канализация</h>
+            <div class="sewage-container">
+                <div class="sewage-icon" id="sewage-icon"></div>
+            </div>
+            <button id="sewage-btn">Обнаружить переполнение</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
